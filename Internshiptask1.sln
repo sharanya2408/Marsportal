@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internshiptask1", "Internshiptask1\Internshiptask1.csproj", "{2CB41FB9-316C-4593-8233-111145853BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speckflowtask1", "Speckflowtask1\Speckflowtask1.csproj", "{F95179F9-B4C4-4574-9538-5E6AF2A91D72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB41FB9-316C-4593-8233-111145853BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB41FB9-316C-4593-8233-111145853BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB41FB9-316C-4593-8233-111145853BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB41FB9-316C-4593-8233-111145853BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95179F9-B4C4-4574-9538-5E6AF2A91D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95179F9-B4C4-4574-9538-5E6AF2A91D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95179F9-B4C4-4574-9538-5E6AF2A91D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95179F9-B4C4-4574-9538-5E6AF2A91D72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45729893-BC5A-451C-B338-C09F6019BA33}
+	EndGlobalSection
+EndGlobal
