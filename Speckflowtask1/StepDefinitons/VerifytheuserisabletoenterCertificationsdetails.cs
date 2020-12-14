@@ -20,7 +20,7 @@ namespace Speckflowtask1.StepDefinitoons
         void Setup()
         {
             driver = new ChromeDriver();
-           
+
         }
         [Given(@"I login to the Mars portal using valid credentials")]
         public void GivenILoginToTheMarsPortalUsingValidCredentials()
@@ -54,7 +54,7 @@ namespace Speckflowtask1.StepDefinitoons
         [Then(@"The user is able to add certifications details and display on profile page\.")]
         public void ThenTheUserIsAbleToAddCertificationsDetailsAndDisplayOnProfilePage_()
         {
-            driver.Close();
+            driver.Quit();
         }
 
     }
