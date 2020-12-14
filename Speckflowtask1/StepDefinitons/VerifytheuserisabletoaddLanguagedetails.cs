@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Speckflowtask1.PageObject;
 using System;
@@ -14,7 +15,9 @@ namespace Speckflowtask1.StepDefinitoons
     public  class VerifytheuserisabletoaddLanguagedetails
     {
         IWebDriver driver;
-        public void setup()
+
+        [BeforeScenario]
+         void Setup()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -24,17 +27,13 @@ namespace Speckflowtask1.StepDefinitoons
         public void GivenILoginToThePortalUsingValidCredentials()
         {
             var HomeloginPage = new HomePage(driver);
-            HomeloginPage.HomePagelogin();
+            HomeloginPage.Login();
         }
         [When(@"I click on Add New button in language tab and enter language, language level details and click on Add")]
         public void WhenIClickOnAddNewButtonInLanguageTabAndEnterLanguageLanguageLevelDetailsAndClickOnAdd()
         {
-            driver.FindElement(By.XPath("//*[text()='Add New']")).Click();
-            Thread.Sleep(3000);
-            driver.FindElement(By.XPath("//*[@name='name']")).SendKeys("Telugu");
-            driver.FindElement(By.CssSelector("select.ui.dropdown")).Click();
-            driver.FindElement(By.XPath("//*[@value='Native/Bilingual']")).Click();
-            driver.FindElement(By.XPath("//*[@value='Add']")).Click();
+            var languagedetails = new ProfilePage(driver);
+            languagedetails.Languagedetails();
         }
         [Then(@"The user is able to add language details and navigate to skills tab")]
         public void ThenTheUserIsAbleToAddLanguageDetailsAndNavigateToSkillsTab()

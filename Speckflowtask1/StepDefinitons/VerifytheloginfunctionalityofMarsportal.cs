@@ -12,8 +12,9 @@ namespace Speckflowtask1.StepDefinitoons
     public  class VerifytheloginfunctionalityofMarsportal
     {
         IWebDriver driver;
+
         [BeforeScenario]
-    void setup()
+        void Setup()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();

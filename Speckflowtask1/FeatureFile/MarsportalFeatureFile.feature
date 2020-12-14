@@ -24,10 +24,10 @@ Scenario: Verify whether the user is able to enter education details in profile 
 	Then  The user is able to add the education details
 
 Scenario: Verify whether the user is able to enter certifications details in profile page
-	Given I login to the portal using valid credentials
+	Given I login to the Mars portal using valid credentials
 	When  I navigate to certifications tab from educations tab and click on Add New button.
 	And   I enter certificate, certificate from, year details and click on Add.
-	Then  The user is able to add certifications details.
+	Then  The user is able to add certifications details and display on profile page.
 
 Scenario: Verify whether the user is able to verify the details entered in profile page.
 

@@ -25,26 +25,12 @@ namespace Internshiptask1.PageObject
             driver.FindElement(By.XPath("//*[@placeholder='Password']")).SendKeys("sharanya24");
             driver.FindElement(By.CssSelector("button.fluid.ui.teal.button")).Click();
 
-            //var x = driver.FindElement(By.LinkText("sharanya katam")).Text;
-            //if(x == "sharanya katam")
-            //{
-            //    Console.WriteLine("successfull");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("unsuccessful");
-            //}
-        //    var profilename = driver.FindElement(By.XPath("//*[@class='item ui dropdown link']")).Text;
-        //    Thread.Sleep(2000);
-          
-        //    if (profilename == "Hi sharanya")
-        //    {
-        //        Console.WriteLine("authorised login");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("unauthorised login");
-        //    }
+
+           //var profilename = driver.FindElement(By.XPath("//*[text()='Hi sharanya']"));
+            
+           // Assert.AreEqual(profilename, "Hi sharanya");
+            
+           
         }
 
     }

@@ -13,7 +13,7 @@ namespace Speckflowtask1.PageObject
         {
             this.driver = driver;
         }
-        public void HomePagelogin()
+        public void Login()
         {
             //navigating to blazedemo
             driver.Navigate().GoToUrl("http://localhost:5000/Home");
@@ -34,7 +34,6 @@ namespace Speckflowtask1.PageObject
             //    Console.WriteLine("unsuccessful");
             //}
             //    var profilename = driver.FindElement(By.XPath("//*[@class='item ui dropdown link']")).Text;
-            //    Thread.Sleep(2000);
 
             //    if (profilename == "Hi sharanya")
             //    {
