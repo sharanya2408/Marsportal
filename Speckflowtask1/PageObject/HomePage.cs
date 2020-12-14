@@ -15,7 +15,7 @@ namespace Speckflowtask1.PageObject
         }
         public void Login()
         {
-            //navigating to blazedemo
+            //navigating to Marsportal
             driver.Navigate().GoToUrl("http://localhost:5000/Home");
 
             //log into the mars portal
